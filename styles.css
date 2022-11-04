@@ -7,29 +7,35 @@ body{
 }
 
 .align{
+    position: fixed;
+    top: 22px;
+    right: 10px;
     height: 100%;
-    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: first baseline;
     flex-direction: column;
     padding-bottom: 8px;
 }
 
-.extend {
+.extend form{
+	right: 100%;
+}
+
+.extend{
 	max-height: 480px;
 }
 
-.head {
+
+.head{
 	width: 100%;
-	display: block;
-	height: 72px;
+	display: flex;
+	height: 45px;
 }
 
-.head a {
+.head a{
 	height: 100%;
 	padding: 0 28px;
-	display: flex;
-    /* left: 460px; */
+	display: fixed;
 	align-items: center;
 	justify-content: center;
     text-decoration: none;

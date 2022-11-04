@@ -1,3 +1,16 @@
+$(window).on("hashchange", function(){
+	if(location.hash.slice(1)=="register"){
+		$(".card").addClass("extend");
+		$("#login").removeClass("selected");
+		$("#register").addClass("selected");
+	} else {
+		$(".card").removeClass("extend");
+		$("#login").addClass("selected");
+		$("#register").removeClass("selected");
+	}
+});
+$(window).trigger("hashchange");
+
 function validate() {
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
@@ -9,3 +22,4 @@ function validate() {
             alert ("Wrong credentials. Try again.");
         }
 }
+
