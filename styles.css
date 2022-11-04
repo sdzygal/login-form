@@ -3,7 +3,7 @@ body{
     padding: 0;
     font-family: sans-serif;
     background-image: url(jonathan-bean-sbZU1j31ggE-unsplash.jpg);
-    background-size: cover;
+    background-size: 120%;
 }
 
 .box{
@@ -13,7 +13,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.3);
     text-align: center;
 
 }
@@ -62,3 +62,38 @@ body{
 .box input[type="submit"]:hover{
     background: #7B68EE;
 }
+
+
+@media (max-width: 575.98px) {
+    body{
+        background-size: 270%;
+    }
+
+    button{
+        width: 100px;
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    body{
+        background-size: 330%;
+    }
+    
+    button{
+        width: 150px;
+    }
+}
+
+
+@media (max-width: 991.98px) { 
+    body{
+        background-size: 340%;
+    }
+   
+    button{
+        width: 180px;
+    }
+}
+
+
