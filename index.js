@@ -1,15 +1,23 @@
-$(window).on("hashchange", function(){
-	if(location.hash.slice(1)=="register"){
-		$(".card").addClass("extend");
-		$("#login").removeClass("selected");
-		$("#register").addClass("selected");
-	} else {
-		$(".card").removeClass("extend");
-		$("#login").addClass("selected");
-		$("#register").removeClass("selected");
-	}
+const signUp = document.getElementById('register');
+const signIn = document.getElementById('login');
+
+signUp.addEventListener('click', () => {
+    const form = document.getElementById('signUp');
+    document.getElementById('signIn').style.display = 'none';
+
+    if(form.style.display === 'none') {
+        form.style.display = 'block';
+    }
 });
-$(window).trigger("hashchange");
+
+signIn.addEventListener('click', () => {
+    const form = document.getElementById('signIn');
+    document.getElementById('signUp').style.display = 'none';
+
+    if(form.style.display === 'none') {
+        form.style.display = 'block';
+    }
+});
 
 function validate() {
     let username = document.getElementById("username").value;

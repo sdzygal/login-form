@@ -17,14 +17,6 @@ body{
     padding-bottom: 8px;
 }
 
-.extend form{
-	right: 100%;
-}
-
-.extend{
-	max-height: 480px;
-}
-
 
 .head{
 	width: 100%;
@@ -60,6 +52,7 @@ body{
 	background: #c2afd4;
 	border-radius: 99px 99px 0 0;
 }
+
 
 .box{
     box-sizing: border-box;
@@ -122,6 +115,7 @@ body{
 .box input[type="submit"]:hover{
     background: #7B68EE;
 }
+
 
 .checkbox {
    
