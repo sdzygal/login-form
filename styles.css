@@ -6,17 +6,71 @@ body{
     background-size: 120%;
 }
 
+.align{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 8px;
+}
+
+.extend {
+	max-height: 480px;
+}
+
+.head {
+	width: 100%;
+	display: block;
+	height: 72px;
+}
+
+.head a {
+	height: 100%;
+	padding: 0 28px;
+	display: flex;
+    /* left: 460px; */
+	align-items: center;
+	justify-content: center;
+    text-decoration: none;
+	color: rgba(0, 0, 0, 0.3);
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.head .selected {
+	position: relative;
+	color: #c2afd4;
+	font-weight: 700;
+}
+
+.head .selected:after {
+	position: absolute;
+	content: "";
+	bottom: 0;
+	left: 0;
+	height: 5px;
+	width: 100%;
+	background: #c2afd4;
+	border-radius: 99px 99px 0 0;
+}
+
 .box{
-    width: 300px;
+    box-sizing: border-box;
+    width: 396px;
+    max-height: 448px;
     padding: 30px;
+    margin: 30px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    overflow: hidden;
     background: rgba(0, 0, 0, 0.3);
     text-align: center;
+    transform: translate(-50%, -50%);
 
 }
+
 
 .box h1{
     color: white;
@@ -61,6 +115,28 @@ body{
 
 .box input[type="submit"]:hover{
     background: #7B68EE;
+}
+
+.checkbox {
+   
+	display: inline-block;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+}
+
+.checkbox span {
+	display: inline-block;
+	align-items: center;
+	color: rgb(110,110,110);
+	font-size: 12px;
+	user-select: none;
+}
+
+.checkbox input {
+	width: 10px;
+	height: 10px;
+	margin-right: 0;
 }
 
 
