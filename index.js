@@ -5,6 +5,7 @@ signUp.addEventListener('click', () => {
     const form = document.getElementById('signUp');
     document.getElementById('signIn').style.display = 'none';
     signUp.className = 'selected';
+    signIn.classList.remove('selected');
 
     if(form.style.display === 'none') {
         form.style.display = 'block';
@@ -17,6 +18,7 @@ signIn.addEventListener('click', () => {
     const form = document.getElementById('signIn');
     document.getElementById('signUp').style.display = 'none';
     signIn.className = 'selected';
+    signUp.classList.remove('selected');
 
     if(form.style.display === 'none') {
         form.style.display = 'block';
@@ -24,22 +26,6 @@ signIn.addEventListener('click', () => {
     
 });
 
-// var selectElement = document.querySelector(".selected");
-// selectElement.addEventListener("change", function() {
-//     if(signIn === 'selected') {
-//                 signUp.remove = 'selected';
-//             } else if(signUp === 'selected') {
-//                 signIn.remove = 'selected';
-//             }
-// });
-
-// function selectElement() {
-//     if(signIn === 'selected') {
-//         signUp.remove = 'selected';
-//     } else if(signUp === 'selected') {
-//         signIn.remove = 'selected';
-//     }
-// };
 
 function validate() {
     let username = document.getElementById("username").value;
